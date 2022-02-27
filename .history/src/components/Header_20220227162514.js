@@ -12,17 +12,16 @@ export default function Header() {
             </Link>
 
             <Link to="/login">
-                <button id='login'>LOGIN</button>
+                <button id='login'>login</button>
             </Link>
 
             <Link to="/register">
-                <button id='register'>REGISTER</button>
+                <button id='home'>HOME</button>
             </Link>
 
             <Link to="/profile">
-                <button id='profile'>PROFILE</button>
+                <button id='home'>HOME</button>
             </Link>
 		</nav>
 	</div>;
 }
-

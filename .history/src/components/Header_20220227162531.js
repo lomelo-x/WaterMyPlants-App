@@ -16,7 +16,7 @@ export default function Header() {
             </Link>
 
             <Link to="/register">
-                <button id='register'>REGISTER</button>
+                <button id='home'>REGISTER</button>
             </Link>
 
             <Link to="/profile">
@@ -25,4 +25,3 @@ export default function Header() {
 		</nav>
 	</div>;
 }
-

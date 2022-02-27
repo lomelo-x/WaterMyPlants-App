@@ -11,18 +11,17 @@ export default function Header() {
                 <button id='home'>HOME</button>
             </Link>
 
-            <Link to="/login">
-                <button id='login'>LOGIN</button>
+            <Link to="/">
+                <button id='home'>HOME</button>
             </Link>
 
-            <Link to="/register">
-                <button id='register'>REGISTER</button>
+            <Link to="/">
+                <button id='home'>HOME</button>
             </Link>
 
-            <Link to="/profile">
-                <button id='profile'>PROFILE</button>
+            <Link to="/">
+                <button id='home'>HOME</button>
             </Link>
 		</nav>
 	</div>;
 }
-

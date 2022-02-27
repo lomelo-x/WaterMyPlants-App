@@ -10,19 +10,6 @@ export default function Header() {
 			<Link to="/">
                 <button id='home'>HOME</button>
             </Link>
-
-            <Link to="/login">
-                <button id='login'>LOGIN</button>
-            </Link>
-
-            <Link to="/register">
-                <button id='register'>REGISTER</button>
-            </Link>
-
-            <Link to="/profile">
-                <button id='profile'>PROFILE</button>
-            </Link>
 		</nav>
 	</div>;
 }
-

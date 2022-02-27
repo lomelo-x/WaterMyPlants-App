@@ -16,13 +16,12 @@ export default function Header() {
             </Link>
 
             <Link to="/register">
-                <button id='register'>REGISTER</button>
+                <button id='home'>REGISTER</button>
             </Link>
 
             <Link to="/profile">
-                <button id='profile'>PROFILE</button>
+                <button id='home'>PROFILE</button>
             </Link>
 		</nav>
 	</div>;
 }
-
