@@ -39,16 +39,6 @@ function Login() {
 		validate(username, value);
 		setFormValues({ ...formValues, [username]: value });
 	};
-
-	const onSubmit = (event) => {
-		event.preventDefault();
-		const loginAttempt = {
-			username: formValues.username.trim(),
-			password: formValues.password.trim(),
-		};
-        console.log(loginAttempt)
-	};
-
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>

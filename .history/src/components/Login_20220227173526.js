@@ -40,14 +40,13 @@ function Login() {
 		setFormValues({ ...formValues, [username]: value });
 	};
 
-	const onSubmit = (event) => {
-		event.preventDefault();
-		const loginAttempt = {
-			username: formValues.username.trim(),
-			password: formValues.password.trim(),
-		};
-        console.log(loginAttempt)
-	};
+    const onSubmit = (event) => {
+        event.preventDefault();
+        const loginAttempt = {
+            username: formValues.username.trim()
+            password
+        }
+    }
 
 	return (
 		<div>

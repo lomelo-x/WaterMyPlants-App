@@ -34,21 +34,9 @@ function Login() {
 			);
 	};
 
-	const onChange = (event) => {
-		const { username, value } = event.target;
-		validate(username, value);
-		setFormValues({ ...formValues, [username]: value });
-	};
-
-	const onSubmit = (event) => {
-		event.preventDefault();
-		const loginAttempt = {
-			username: formValues.username.trim(),
-			password: formValues.password.trim(),
-		};
-        console.log(loginAttempt)
-	};
-
+    const onChange = (event) => {
+        const
+    }
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>

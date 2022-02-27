@@ -46,7 +46,7 @@ function Login() {
 			username: formValues.username.trim(),
 			password: formValues.password.trim(),
 		};
-        console.log(loginAttempt)
+        console.log(login)
 	};
 
 	return (
