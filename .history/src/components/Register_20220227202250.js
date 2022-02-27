@@ -105,7 +105,7 @@ function Register() {
 					id="password"
 					name="password"
 					type="password"
-                    placeholder="password"
+                    pla
 					value={formValues.password}
 					onChange={onChange}
 					onBlur={(event) => {
@@ -126,7 +126,6 @@ function Register() {
 					name="phone number"
 					mask="(999) 999-9999"
 					type="tel"
-                    placeholder="Phone Number"
 					value={formValues.phoneNumber}
 					onChange={onChange}
 					onBlur={(event) => {

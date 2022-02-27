@@ -126,7 +126,7 @@ function Register() {
 					name="phone number"
 					mask="(999) 999-9999"
 					type="tel"
-                    placeholder="Phone Number"
+                    placeholder="phone Number"
 					value={formValues.phoneNumber}
 					onChange={onChange}
 					onBlur={(event) => {
