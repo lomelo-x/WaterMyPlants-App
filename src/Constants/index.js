@@ -1,0 +1,1 @@
+export const API_URL = 'https://water-my-plants-app-backend.herokuapp.com/api'
