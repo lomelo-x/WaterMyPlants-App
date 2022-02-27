@@ -78,7 +78,7 @@ function Register() {
 				}}
 			/>
 			<div className="form-fields">
-				<label htmlFor="username">Username</label>
+            <label htmlfor="username">Username</label>
 				<input
 					aria-describedby="username-error-message"
 					aria-invalid={fieldErrors.username ? true : false}
@@ -90,63 +90,50 @@ function Register() {
 						validateField(event.target.name, event.target.value);
 					}}
 				/>
-				<div className="error-message" role="alert" id="username-error-message">
+                <div className="error-message" role="alert" id="username-error-message">
 					{fieldErrors.username}
 				</div>
-			</div>
+            </div>
+				
 
-			<div className="form-fields">
-				<label htmlFor="password">password</label>
-				<input
-					aria-describedby="password-error-message"
-					aria-invalid={fieldErrors.password ? true : false}
-					id="password"
-					name="password"
-					type="password"
-					value={formValues.password}
-					onChange={onChange}
-					onBlur={(event) => {
-						validateField(event.target.name, event.target.value);
-					}}
-				/>
-				<div className="error-message" role="alert" id="password-error-message">
+
+			<div className="error-message" role="alert" id="password-error-message">
 					{fieldErrors.password}
 				</div>
-			</div>
-
-			<div className="form-fields">
-				<label htmlFor="phoneNumber">Phone Number</label>
-				<InputMask
-					aria-describedby="phone-error-message"
-					aria-invalid={fieldErrors.phoneNumber ? true : false}
-					id="phoneNumber"
-					name="phone number"
-					mask="(999) 999-9999"
-					type="tel"
-					value={formValues.phoneNumber}
-					onChange={onChange}
-					onBlur={(event) => {
-						validateField(event.target.username, event.target.value);
-					}}
-				/>
-				<div
-					className="error-message"
-					role="alert"
-					id="phoneNumber-error-message"
-				>
-					{fieldErrors.phoneNumber}
+				<div className="form-fields">
+					<label htmlFor="phoneNumber">Phone Number</label>
+					<InputMask
+						aria-describedby="phone-error-message"
+						aria-invalid={fieldErrors.phoneNumber ? true : false}
+						id="phoneNumber"
+						name="phone number"
+						mask="(999) 999-9999"
+						type="tel"
+						value={formValues.phoneNumber}
+						onChange={onChange}
+						onBlur={(event) => {
+							validateField(event.target.username, event.target.value);
+						}}
+					/>
+					<div
+						className="error-message"
+						role="alert"
+						id="phoneNumber-error-message"
+					>
+						{fieldErrors.phoneNumber}
+					</div>
 				</div>
+				<div className="error-message" role="alert" id="form-error-message">
+					{formError}
+				</div>
+				<button
+					className="submit-button"
+					type="submit"
+					disabled={!isValidForm() || isLoading}
+				>
+					{isLoading ? 'loading...' : 'register'}
+				</button>
 			</div>
-			<div className="error-message" role="alert" id="form-error-message">
-				{formError}
-			</div>
-			<button
-				className="submit-button"
-				type="submit"
-				disabled={!isValidForm() || isLoading}
-			>
-				{isLoading ? 'loading...' : 'register'}
-			</button>
 		</div>
 	);
 }

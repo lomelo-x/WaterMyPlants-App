@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import loginSchema from '../Validation/loginSchema';
 import { API_URL } from '../Constants';
-import { setUserId } from '../Actions/userActions';
+import { setUserId } from './';
 import { connect } from 'react-redux';
 
 const initFormValues = {
@@ -20,7 +20,7 @@ const initFormErrors = {
 
 const initDisabled = true;
 
-function Login({ dispatch }) {
+function Login() {
 	const navigate = useNavigate();
 
 	const [formValues, setFormValues] = useState(initFormValues);

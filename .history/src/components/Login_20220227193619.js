@@ -20,7 +20,7 @@ const initFormErrors = {
 
 const initDisabled = true;
 
-function Login({ dispatch }) {
+function Login({ dispatch}) {
 	const navigate = useNavigate();
 
 	const [formValues, setFormValues] = useState(initFormValues);

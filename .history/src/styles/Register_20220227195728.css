@@ -1,0 +1,58 @@
+.register-container{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.register-form {
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 360px;
+	gap: 32px;
+}
+
+.form-fields {
+    display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex-start;
+	gap: 6px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #efefef;
+    border: 1px solid #bbb;
+}
+
+input[aria-invalid='true'] {
+    border: 1px solid crimson;
+}
+
+.error-message {
+    color: crimson;
+}
+
+.submit-button {
+    align-self: flex-end;
+	padding: 8px 16px;
+	border-radius: 6px;
+	background-color: cornflowerblue;
+	color: white;
+	border: 1px solid transparent;
+	height: unset;
+}
+
+&disabled {
+    opacity: 60%;
+    cursor: not-allowed;
+}
+
+&:hover {
+    background-color: #91b3f2;
+    border-color: transparent;
+}

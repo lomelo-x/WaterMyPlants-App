@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import loginSchema from '../Validation/loginSchema';
 import { API_URL } from '../Constants';
-import { setUserId } from '../Actions/userActions';
+import { setUserId } from '../actions/profileActions';
 import { connect } from 'react-redux';
 
 const initFormValues = {
@@ -20,7 +20,7 @@ const initFormErrors = {
 
 const initDisabled = true;
 
-function Login({ dispatch }) {
+function Login() {
 	const navigate = useNavigate();
 
 	const [formValues, setFormValues] = useState(initFormValues);
@@ -53,26 +53,20 @@ function Login({ dispatch }) {
 	};
 
 	const postLogin = (loginAttempt) => {
-		axios
-			.post(`${API_URL}/auth/login`, loginAttempt)
-			.then((res) => {
-				localStorage.setItem('token', res.data.token);
-				dispatch(setUserId(res.data.user_id));
-				navigate('/profile');
-			})
-			.catch((error) => {
-				const loginError = {
-					...formErrors,
-					loginAttempt: 'Login failed. please try again.',
-				};
-				setFormErrors(loginError);
-			})
-			.finally(() => setFormValues(initFormValues));
+		axios.post(`${API_URL}/auth/login`, loginAttempt).then((res) => {
+			localStorage.setItem('token', res.data.token);
+			dispatch(setUserId(res.data.user_id));
+			navigate('/profile');
+		})
+        .catch((error) => {
+            const loginError = {
+                ...formErrors,
+                loginAttempt: 'Login failed. please try again.',
+            };
+            setFormErrors(loginError);
+        })
+        .finally(() => setFormValues(initialFormValues))
 	};
-
-	useEffect(() => {
-		loginSchema.isValid(formValues).then((valid) => setDisabled(!valid));
-	}, [formValues]);
 
 	return (
 		<div>
