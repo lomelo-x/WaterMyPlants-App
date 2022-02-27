@@ -34,9 +34,7 @@ function Login() {
 			);
 	};
 
-    const onChange = (event) => {
-        
-    }
+    const 
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>

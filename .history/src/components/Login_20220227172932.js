@@ -33,10 +33,6 @@ function Login() {
 				setFormErrors({ ...formErrors, [username]: error.errors[0] })
 			);
 	};
-
-    const onChange = (event) => {
-        
-    }
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>
