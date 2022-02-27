@@ -29,4 +29,4 @@ function Header() {
 	);
 }
 
-export default Header;
+font-size: 0.5rem;
