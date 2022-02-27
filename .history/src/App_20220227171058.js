@@ -3,9 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Login from './Components/Login';
-import Register from './Components/Register';
-import Profile from './Components/Profile';
-
+import Login from './Components/Login';
 
 
 import './App.css';
@@ -17,8 +15,6 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
 			</Routes>
 		</div>
 	);
