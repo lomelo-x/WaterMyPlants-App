@@ -1,5 +1,7 @@
-import Header from './Components/Header';
+import { Routes, Route}
 import './App.css';
+
+import Header from './Components/Header';
 
 function App() {
 	return (
