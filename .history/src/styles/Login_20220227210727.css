@@ -1,17 +1,19 @@
-.register-container{
+.login-container{
     display: flex;
 	flex-direction: column;
 	align-items: center;
+    width: 360px;
+	gap: 32px;
 }
 
-.register-form {
+/* .login-form {
     display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	width: 360px;
 	gap: 32px;
     
-}
+} */
 
 .form-fields {
     display: flex;
@@ -37,10 +39,6 @@ input[aria-invalid='true'] {
 
 .error-message {
     color: crimson;
-}
-
-.submit-button {
-    
 }
 
 .button-container {

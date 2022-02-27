@@ -81,7 +81,7 @@ function Login({ dispatch }) {
 				<h2>LOGIN</h2>
 			</div>
 			<form className="login-form" onSubmit={onSubmit}>
-				<div className="login-input">
+				<div className="form-fields">
 					<label htmlFor="username">Username:</label>
 					<input
 						id="username"
@@ -92,7 +92,7 @@ function Login({ dispatch }) {
 						placeholder="username"
 					/>
 				</div>
-				<form className="login-input">
+				<form className="form-fields">
 					<label htmlFor="password">Password:</label>
 					<input
 						id="password"

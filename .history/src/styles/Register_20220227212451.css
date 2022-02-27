@@ -16,7 +16,7 @@
 .form-fields {
     display: flex;
 	flex-direction: column;
-	width: 65%;
+	width: 55%;
 	align-items: flex-start;
 	gap: 15px;
 

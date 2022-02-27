@@ -78,10 +78,10 @@ function Login({ dispatch }) {
 	return (
 		<div className="login-container">
 			<div>
-				<h2>LOGIN</h2>
+				<h2>LOGIN PAGE</h2>
 			</div>
-			<form className="login-form" onSubmit={onSubmit}>
-				<div className="login-input">
+			<form className="login-form">
+				<div className="form-fields">
 					<label htmlFor="username">Username:</label>
 					<input
 						id="username"
@@ -92,7 +92,7 @@ function Login({ dispatch }) {
 						placeholder="username"
 					/>
 				</div>
-				<form className="login-input">
+				<form className="form-fields">
 					<label htmlFor="password">Password:</label>
 					<input
 						id="password"
@@ -103,15 +103,15 @@ function Login({ dispatch }) {
 						placeholder="password"
 					/>
 				</form>
-				<div className="button-container">
-					<button type="submit" id="loginBtn" disabled={disabled}>
-						LOGIN
-					</button>
-				</div>
-				<div className="error-message">
-					<div>{formErrors.username}</div>
-					<div>{formErrors.password}</div>
-					<div>{formErrors.loginAttempt}</div>
+				<button type="submit" id="loginBtn" disabled={disabled}>
+					LOGIN
+				</button>
+				<div className="login-wrapper">
+					<div className="errors">
+						<div>{formErrors.username}</div>
+						<div>{formErrors.password}</div>
+						<div>{formErrors.loginAttempt}</div>
+					</div>
 				</div>
 			</form>
 		</div>
