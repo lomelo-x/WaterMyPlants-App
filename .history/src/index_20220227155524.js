@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reportWebVitals from './reportWebVitals';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
+import thunk from 'thunk';
+import logger from 'logger';
 
 const store = createStore(applyMiddleware(thunk, logger));
 
@@ -24,5 +24,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-console.log(store.getState());

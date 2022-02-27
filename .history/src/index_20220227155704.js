@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reportWebVitals from './reportWebVitals';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
+import thunk from 'thunk';
+import logger from 'reudx-logger';
 
 const store = createStore(applyMiddleware(thunk, logger));
 
