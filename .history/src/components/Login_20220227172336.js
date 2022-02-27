@@ -22,7 +22,6 @@ function Login() {
     const [formValues, setFormValues] = useState(initFormValues)
     const [formErrors, setFormErrors] = useState(initFormErrors)
     const [disabled, setDisabled] = useState(initDisabled)
-    
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>

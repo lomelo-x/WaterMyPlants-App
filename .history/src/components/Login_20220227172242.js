@@ -20,9 +20,7 @@ function Login() {
     const navigate = useNavigate()
 
     const [formValues, setFormValues] = useState(initFormValues)
-    const [formErrors, setFormErrors] = useState(initFormErrors)
-    const [disabled, setDisabled] = useState(initDisabled)
-    
+    const 
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>

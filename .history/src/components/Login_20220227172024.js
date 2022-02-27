@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import * as yup from 'yup';
-import { useNavigate } from 'react-router-dom';
 
 const initFormValues = {
 	username: '',
@@ -15,14 +14,7 @@ const initFormErrors = {
 };
 
 const initDisabled = true;
-
 function Login() {
-    const navigate = useNavigate()
-
-    const [formValues, setFormValues] = useState(initFormValues)
-    const [formErrors, setFormErrors] = useState(initFormErrors)
-    const [disabled, setDisabled] = useState(initDisabled)
-    
 	return (
 		<div>
 			<h1>LOGIN PAGE</h1>
