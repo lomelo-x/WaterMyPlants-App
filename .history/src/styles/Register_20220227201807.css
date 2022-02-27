@@ -18,7 +18,7 @@
 	flex-direction: column;
 	width: 65%;
 	align-items: flex-start;
-	gap: 15px;
+	gap: 10px;
 
 }
 
@@ -40,9 +40,5 @@ input[aria-invalid='true'] {
 }
 
 .submit-button {
-    
-}
-
-.button-container {
-    padding-top: 20px;
+    padding-top: 10px;
 }

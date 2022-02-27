@@ -52,7 +52,7 @@ function Register() {
 	return (
 		<div className="register-container">
 			<div>
-				<h2>REGISTER</h2>
+				<h1>REGISTER</h1>
 			</div>
 			<form
 				className="register-form"
@@ -141,15 +141,9 @@ function Register() {
 			<div className="error-message" role="alert" id="form-error-message">
 				{formError}
 			</div>
-			<div className="button-container">
-				<button
-					className="submit-button"
-					type="submit"
-					disabled={!isValidForm() || isLoading}
-				>
-					{isLoading ? 'loading...' : 'SUBMIT'}
-				</button>
-			</div>
+			<button type="submit" disabled={!isValidForm() || isLoading}>
+				{isLoading ? 'loading...' : 'SUBMIT'}
+			</button>
 		</div>
 	);
 }

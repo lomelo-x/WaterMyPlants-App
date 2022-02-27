@@ -10,15 +10,14 @@
 	align-items: flex-start;
 	width: 360px;
 	gap: 32px;
-    
 }
 
 .form-fields {
     display: flex;
 	flex-direction: column;
-	width: 65%;
+	width: 100%;
 	align-items: flex-start;
-	gap: 15px;
+	gap: 6px;
 
 }
 
@@ -26,7 +25,7 @@ input {
     width: 100%;
     box-sizing: border-box;
     padding: 8px 16px;
-    border-radius: 3px;
+    border-radius: 6px;
     background-color: #efefef;
     border: 1px solid #bbb;
 }
@@ -37,12 +36,3 @@ input[aria-invalid='true'] {
 
 .error-message {
     color: crimson;
-}
-
-.submit-button {
-    
-}
-
-.button-container {
-    padding-top: 20px;
-}

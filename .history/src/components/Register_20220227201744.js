@@ -141,15 +141,9 @@ function Register() {
 			<div className="error-message" role="alert" id="form-error-message">
 				{formError}
 			</div>
-			<div className="button-container">
-				<button
-					className="submit-button"
-					type="submit"
-					disabled={!isValidForm() || isLoading}
-				>
-					{isLoading ? 'loading...' : 'SUBMIT'}
-				</button>
-			</div>
+			<button className='submit-button' type="submit" disabled={!isValidForm() || isLoading}>
+				{isLoading ? 'loading...' : 'SUBMIT'}
+			</button>
 		</div>
 	);
 }

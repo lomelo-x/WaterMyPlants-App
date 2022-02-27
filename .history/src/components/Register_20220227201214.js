@@ -52,7 +52,7 @@ function Register() {
 	return (
 		<div className="register-container">
 			<div>
-				<h2>REGISTER</h2>
+				<h1>REGISTER PAGE</h1>
 			</div>
 			<form
 				className="register-form"
@@ -79,7 +79,7 @@ function Register() {
 				}}
 			/>
 			<div className="form-fields">
-				<label htmlFor="username">Username:</label>
+				<label htmlFor="username">Username</label>
 				<input
 					aria-describedby="username-error-message"
 					aria-invalid={fieldErrors.username ? true : false}
@@ -97,7 +97,7 @@ function Register() {
 			</div>
 
 			<div className="form-fields">
-				<label htmlFor="password">Password:</label>
+				<label htmlFor="password">password</label>
 				<input
 					aria-describedby="password-error-message"
 					aria-invalid={fieldErrors.password ? true : false}
@@ -116,7 +116,7 @@ function Register() {
 			</div>
 
 			<div className="form-fields">
-				<label htmlFor="phoneNumber">Phone Number:</label>
+				<label htmlFor="phoneNumber">Phone Number</label>
 				<InputMask
 					aria-describedby="phone-error-message"
 					aria-invalid={fieldErrors.phoneNumber ? true : false}
@@ -141,15 +141,9 @@ function Register() {
 			<div className="error-message" role="alert" id="form-error-message">
 				{formError}
 			</div>
-			<div className="button-container">
-				<button
-					className="submit-button"
-					type="submit"
-					disabled={!isValidForm() || isLoading}
-				>
-					{isLoading ? 'loading...' : 'SUBMIT'}
-				</button>
-			</div>
+			<button type="submit" disabled={!isValidForm() || isLoading}>
+				{isLoading ? 'loading...' : 'REGISTER'}
+			</button>
 		</div>
 	);
 }
